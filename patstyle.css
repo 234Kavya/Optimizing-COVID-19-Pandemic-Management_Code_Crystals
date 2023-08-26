@@ -68,3 +68,13 @@ textarea {
     margin-top: 1rem;
     color: #555;
 }
+
+section{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+button{
+    width: max-content;
+   align-items: center;
+}
+

@@ -125,3 +125,7 @@ a:hover {
 .medicine-items {
     margin-top: 20px;
 }
+
+.form-group{  
+    display: flex;
+}

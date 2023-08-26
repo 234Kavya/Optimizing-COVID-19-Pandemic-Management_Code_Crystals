@@ -4,6 +4,8 @@
     <title>Doctor Page</title>
     <link rel="stylesheet" type="text/css" href="dstyle.css">
     <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
     <nav class="navbar">
@@ -21,17 +23,37 @@
         <h1>Enter Patient Information</h1>
         <form id="patient-form">
 
+            <div class="form-group">
             <label for="age">Age:</label>
             <input type="number" id="age" name="age">
+            <div class="speak_btn">
+                <button onclick="startSpeechRecognition('age')"><i class="material-icons" style="font-size: 15px;">mic</i></button>
+            <button onclick="addPatient()"><i class="material-icons" style="font-size: 15px;">mic_off</i></button>
+              </div>
+            </div>
 
             <label for="symptoms">Symptoms:</label>
             <textarea id="symptoms" name="symptoms" rows="4"></textarea>
+            <div class="speak_btn">
+                <button onclick="startSpeechRecognition('symptoms')"><i class="material-icons" style="font-size: 15px;">mic</i></button>
+            <button onclick="addPatient()"><i class="material-icons" style="font-size: 15px;">mic_off</i></button>
+              </div>
+            
 
             <label for="disease">Disease:</label>
             <input type="text" id="disease" name="disease">
+            <div class="speak_btn">
+                <button onclick="startSpeechRecognition('disease')"><i class="material-icons" style="font-size: 15px;">mic</i></button>
+            <button onclick="addPatient()"><i class="material-icons" style="font-size: 15px;">mic_off</i></button>
+              </div>
+            
 
             <label for="prescription">Prescription:</label>
             <textarea id="prescription" name="prescription" rows="4"></textarea>
+            <div class="speak_btn">
+                <button onclick="startSpeechRecognition('prescription')"><i class="material-icons" style="font-size: 15px;">mic</i></button>
+            <button onclick="addPatient()"><i class="material-icons" style="font-size: 15px;">mic_off</i></button>
+              </div>
 
             <button type="submit">Submit</button>
         </form>
@@ -55,6 +77,8 @@
         </div>
     </div>
 
+   
     <script src="hospitals.js"></script>
+    <script src="general.js"></script>
 </body>
 </html>

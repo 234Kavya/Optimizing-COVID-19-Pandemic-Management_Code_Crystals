@@ -3,9 +3,12 @@
 <html>
 <head>
     <title>Pharmacist - Medicine Management</title>
+
     <link rel="stylesheet" type="text/css" href="pstyle.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
 </head>
 <body>
@@ -25,27 +28,47 @@
         </nav>
     </header>
     <form id="medicine-search-form">
+        <div class="form-group">
         <label for="city">Select City:</label>
         <select id="city" name="city">
             <option value="New York">New York</option>
             <option value="Los Angeles">Los Angeles</option>
             <option value="Chicago">Chicago</option>
         </select>
+        <div class="speak_btn">
+            <button onclick="startSpeechRecognition('')"><i class="material-icons" style="font-size: 15px;">mic</i></button>
+            <button onclick="addPatient()"><i class="material-icons" style="font-size: 15px;">mic_off</i></button>
+          </div>
+        </div>
 
+        <div class="form-group">
         <label for="hospital">Select Hospital:</label>
         <select id="hospital" name="hospital">
             <!-- Hospital options will be added dynamically using JavaScript -->
         </select>
+        <div class="speak_btn">
+            <button onclick="startSpeechRecognition('hospital')"><i class="material-icons" style="font-size: 15px;">mic</i></button>
+            <button onclick="addPatient()"><i class="material-icons" style="font-size: 15px;">mic_off</i></button>
+          </div>
+        </div>
 
+        <div class="form-group">
         <label for="medicine">Search Medicine:</label>
         <input type="text" id="medicine" name="medicine" placeholder="Enter medicine name">
+      
+        <div class="speak_btn">
+            <button onclick="startSpeechRecognition('medicine')"><i class="material-icons" style="font-size: 15px;">mic</i></button>
+            <button onclick="addPatient()"><i class="material-icons" style="font-size: 15px;">mic_off</i></button>
+          </div>
+        </div>
+
         <button type="submit">Search</button>
     </form>
 
     <div id="medicine-list">
         <!-- Medicine search results will be displayed here -->
     </div>
-
+    <script src="general.js"></script>
     <script src="pharmacist.js"></script>
 </body>
 </html>
