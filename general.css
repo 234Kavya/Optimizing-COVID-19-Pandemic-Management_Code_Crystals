@@ -1,0 +1,49 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: #efefe8;
+}
+
+header {
+    background-color: #678ef0;
+
+}
+
+.banner-content{
+    color: black;
+}
+
+button{
+    background-color: #678ef0;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: font-weight 0.3s, text-decoration 0.3s;
+}
+
+nav a:hover {
+    background-color: #f4f4f4;
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: underline;
+}

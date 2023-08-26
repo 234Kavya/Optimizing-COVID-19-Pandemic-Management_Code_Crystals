@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharmacist - Medicine Management</title>
+    <link rel="stylesheet" type="text/css" href="pstyle.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+
+</head>
+<body>
+ 
+    <header>
+        <h2>Medicine Management</h2>
+         <nav>
+            <nav>
+                <ul>
+                    <li><a href="doctor.html">Doctor</a></li>
+                    <li><a href="receptionist.html">Receptionist</a></li>
+                    <li><a href="pharmacist.html">Pharmacist</a></li>
+                    <li><a href="Analytics_Insights.html">Analysis</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <form id="medicine-search-form">
+        <label for="city">Select City:</label>
+        <select id="city" name="city">
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+        </select>
+
+        <label for="hospital">Select Hospital:</label>
+        <select id="hospital" name="hospital">
+            <!-- Hospital options will be added dynamically using JavaScript -->
+        </select>
+
+        <label for="medicine">Search Medicine:</label>
+        <input type="text" id="medicine" name="medicine" placeholder="Enter medicine name">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="medicine-list">
+        <!-- Medicine search results will be displayed here -->
+    </div>
+
+    <script src="pharmacist.js"></script>
+</body>
+</html>

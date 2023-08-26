@@ -1,0 +1,142 @@
+/* Add your styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+/* navbar starts */
+
+/* Previous styles */
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: font-weight 0.3s, text-decoration 0.3s;
+}
+
+nav a:hover {
+    background-color: #f4f4f4;
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* navbar ends */
+/* Style your forms and other elements */
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 50px;
+    color: #333;
+}
+
+p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.role-links {
+    list-style: none;
+    padding: 0;
+}
+
+.role-links li {
+    margin-top: 20px;
+}
+
+.role-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.role-links a:hover {
+    background-color: #0056b3;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select,
+input[type="text"],
+button {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#medicine-list {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.medicine-item {
+    margin-top: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
