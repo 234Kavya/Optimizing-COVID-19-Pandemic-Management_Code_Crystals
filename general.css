@@ -21,6 +21,10 @@ button{
 }
 
 
+
+nav{
+    margin-top: 20px;
+}
 nav ul {
     list-style: none;
     display: flex;

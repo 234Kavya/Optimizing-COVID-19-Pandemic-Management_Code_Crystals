@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversational Form</title>
+</head>
+<body>
+<div>
+  <h2>Enter Patient Information</h2>
+  <div id="conversation"></div>
+</div>
+
+<script>
+const conversationDiv = document.getElementById('conversation');
+const questions = [
+  'Please state the patient\'s name.',
+  'What is the patient\'s date of birth?',
+  'What is the patient\'s gender?',
+  'Please provide the patient\'s contact number.'
+];
+let currentQuestionIndex = 0;
+
+function displayQuestion(question) {
+  const questionDiv = document.createElement('div');
+  questionDiv.textContent = question;
+  conversationDiv.appendChild(questionDiv);
+  scrollToBottom();
+}
+
+function displayAnswer(answer) {
+  const answerDiv = document.createElement('div');
+  answerDiv.textContent = `Answer: ${answer}`;
+  conversationDiv.appendChild(answerDiv);
+  scrollToBottom();
+}
+
+function scrollToBottom() {
+  conversationDiv.scrollTop = conversationDiv.scrollHeight;
+}
+
+function askNextQuestion() {
+  if (currentQuestionIndex < questions.length) {
+    displayQuestion(questions[currentQuestionIndex]);
+    listenForAnswer();
+  } else {
+    displayAnswer('Thank you for providing patient information.');
+  }
+}
+
+function listenForAnswer() {
+  const recognition = new webkitSpeechRecognition();
+  recognition.continuous = false;
+
+  recognition.onresult = (event) => {
+    const transcript = event.results[0][0].transcript;
+    displayAnswer(transcript);
+    currentQuestionIndex++;
+    setTimeout(askNextQuestion, 1000); // Ask the next question after a delay
+  };
+
+  recognition.onend = () => {
+    recognition.start();
+  };
+
+  recognition.start();
+}
+
+askNextQuestion();
+
+</script>
+</body>
+</html>
