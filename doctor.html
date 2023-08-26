@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Page</title>
+    <link rel="stylesheet" type="text/css" href="dstyle.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Doctor's Clinic</div>
+        <ul class="navbar-nav">
+                        <li><a href="doctor.html">Doctor</a></li>
+                        <li><a href="receptionist.html">Receptionist</a></li>
+                        <li><a href="pharmacist.html">Pharmacist</a></li>
+                        <li><a href="Analytics_Insights.html">Analysis</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Enter Patient Information</h1>
+        <form id="patient-form">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+            <label for="symptoms">Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" rows="4"></textarea>
+
+            <label for="disease">Disease:</label>
+            <input type="text" id="disease" name="disease">
+
+            <label for="prescription">Prescription:</label>
+            <textarea id="prescription" name="prescription" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="patient-info-container">
+            <h2>Entered Patient Information:</h2>
+            <table id="patient-info-table">
+                <thead>
+                    <tr>
+                        <th>Age</th>
+                        <th>Disease</th>
+                        <th>Symptoms</th>
+                        <th>Medicine</th>
+                        <th>Prescription</th>
+                    </tr>
+                </thead>
+                <tbody id="patient-info-body">
+                    <!-- Patient information rows will be added dynamically here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="hospitals.js"></script>
+</body>
+</html>

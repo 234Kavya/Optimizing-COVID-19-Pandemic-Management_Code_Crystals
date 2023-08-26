@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rstyle.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <title>Hospital Management System - Receptionist</title>
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+        <div class="blank-space">
+
+        </div>
+        <nav>
+            <ul>
+                <nav>
+                    <ul>
+                        <li><a href="doctor.html">Doctor</a></li>
+                        <li><a href="receptionist.html">Receptionist</a></li>
+                        <li><a href="pharmacist.html">Pharmacist</a></li>
+                        <li><a href="Analytics_Insights.html">Analysis</a></li>
+                    </ul>
+                </nav>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="center-container">
+        <div class="container">
+            <h2>Register Patient</h2>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="Enter patient's name">
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth:</label>
+              <input type="text" id="dob" placeholder="YYYY-MM-DD">
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender:</label>
+              <input type="text" id="gender" placeholder="Male/Female/Other">
+            </div>
+            <div class="form-group">
+              <label for="contact">Contact Number:</label>
+              <input type="text" id="contact" placeholder="Enter contact number">
+            </div>
+            <button onclick="registerPatient()">Register</button>
+          </div>
+         
+         </div>
+
+         
+<div class="center-container">
+  <div class="container output-data" id="outputData" ">
+    <h2>Entered Data</h2>
+    <table class="output-table">
+      <tr>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Gender</th>
+        <th>Contact Number</th>
+      </tr>
+      <tr>
+        <td id="outputName"></td>
+        <td id="outputDOB"></td>
+        <td id="outputGender"></td>
+        <td id="outputContact"></td>
+      </tr>
+    </table>
+  </div>
+</div
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Hospital Management System</p>
+    </footer>
+    <script src="receptionist.js"></script>
+</body>
+</html>

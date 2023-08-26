@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header>
+    <!-- <title>Data Analytics and Insights</title> -->
+</header>
+ 
+        <style>
+            body, h1, h2, h3, p, ul, li {
+                margin: 0;
+                padding: 0;
+            }
+
+            img{
+                height: 100vh;
+            }
+        #image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-link {
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .displayed-image {
+            max-width: 100%;
+            max-height: 400px;
+            display: none;
+            margin-top: 20px;
+        }
+        .tit{
+            color: white;
+            background-color: #678ef0;
+            padding: 20px 20px ;
+            text-align: center;
+            justify-content: center;
+        }
+   
+    </style>
+      
+        
+    
+    
+</head>
+<body>
+    <h1 class="tit">Data Analytics and Insights</h1>
+    <button>
+
+   
+    <a class="back-link" href="index.html">Back to Home</a>
+</button>
+
+    <div id="image-container">
+        <a class="image-link" onclick="displayImage('image1.jpg')">
+            <img src="Hospitals.png" alt="Image 1">
+        </a>
+        <a class="image-link" onclick="displayImage('image2.jpg')">
+            <img src="Hospital Management Dashboard.png" alt="Image 2">
+        </a>
+        <a class="image-link" onclick="displayImage('image3.jpg')">
+            <img src="BedAllocation.png" alt="Image 3">
+        </a>
+    </div>
+    
+    <!-- <img id="covid19-dashboard" class="dashboard-image" src="Hospitals.png" alt="COVID-19 Hospitals Dashboard">
+    <img id="hims-dashboard" class="dashboard-image" src="Hospital Management Dashboard.png" alt="Hospital Information Management Dashboard">
+    <img id="allocation-dashboard" class="dashboard-image" src="BedAllocation.png" alt="Hospital Resource Allocation Dashboard"> -->
+   <img id="displayed-image" class="displayed-image" src="" alt="Displayed Image">
+
+    <script>
+         const displayedImage = document.getElementById('displayed-image');
+
+function displayImage(imagePath) {
+    displayedImage.src = imagePath;
+    displayedImage.style.display = 'block';
+}
+    </script>
+    
+</body>
+</html>

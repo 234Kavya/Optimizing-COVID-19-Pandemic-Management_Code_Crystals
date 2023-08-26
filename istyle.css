@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+
+nav h1{
+    color: white;
+    margin-left: 10px;
+}
+
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    margin-top: 50px;
+    color: #333;
+}
+
+p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.role-links {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.role-links li {
+    margin: 20px;
+}
+
+.role-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #678ef0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.role-links a:hover {
+    background-color: #0056b3;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.banner {
+    background-image: url('hospital-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add more styles for other sections as needed */
